@@ -21,6 +21,7 @@
                         clifford: '#da373d',
                         'btn-primary-gold': '#B68C5A',
                     }
+                    
                 }
             }
         }
@@ -34,11 +35,15 @@
         .font-poppins {
             font-family: 'Poppins', sans-serif;
         }
+        .bg-image {
+            background-image: url('images/banner.png');
+            
+        }
     </style>
 </head>
 
 <body>
-    <header class="max-w-[1160px] mx-auto p-2 md:p-6 lg:p-8">
+    <header class="max-w-[1160px] mx-auto md:p-6 lg:p-8">
         <!-- navbar section  -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -63,7 +68,7 @@
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl"><img src="images/logo2.png" alt=""></a>
+                <a class="btn btn-ghost text-xl"><img class="w-[120px] lg:w-full" src="images/logo2.png" alt=""></a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -78,6 +83,22 @@
                 <a class="btn bg-[#B68C5A] text-white">Button</a>
             </div>
         </div>
+        <section class="mt-12">
+            <!-- banner section  -->
+            <div class="hero bg-image">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="text-center w-1/2">
+                    <h1 class="mb-5 pt-10 text-xl lg:text-5xl  font-bold">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5 text-xs">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-3 pb-16">
+                        <input type="text" placeholder="Search here" class="  input input-bordered w-full max-w-xs" />
+                        <button class="btn bg-[#B68C5A] text-white ml-1">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
     <main>
 
